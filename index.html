@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panxi Wang</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    height:100vh;
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at 20% 20%,#ffd6f8 0%,transparent 30%),
+    radial-gradient(circle at 80% 30%,#9bd3ff 0%,transparent 35%),
+    radial-gradient(circle at 50% 80%,#cba7ff 0%,transparent 30%),
+    linear-gradient(135deg,#0b1337,#22184a,#401f64);
+
+}
+
+/* 星空 */
+
+body::before{
+
+content:"";
+
+position:absolute;
+
+width:200%;
+height:200%;
+
+background-image:
+radial-gradient(white 1px,transparent 1px);
+
+background-size:55px 55px;
+
+opacity:.25;
+
+animation:moveStars 80s linear infinite;
+
+}
+
+@keyframes moveStars{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-600px);
+}
+
+}
+
+/* 发光背景 */
+
+.glow{
+
+position:absolute;
+
+width:700px;
+height:700px;
+
+background:
+radial-gradient(circle,#ff99dd55 0%,transparent 70%);
+
+filter:blur(80px);
+
+animation:float 8s ease-in-out infinite;
+
+}
+
+.glow2{
+
+position:absolute;
+
+width:600px;
+height:600px;
+
+background:
+radial-gradient(circle,#8ecbff55 0%,transparent 70%);
+
+filter:blur(80px);
+
+animation:float2 9s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+50%{
+transform:translateY(-30px);
+}
+
+}
+
+@keyframes float2{
+
+50%{
+transform:translateY(40px);
+}
+
+}
+
+/* 卡片 */
+
+.card{
+
+position:relative;
+
+z-index:10;
+
+padding:70px 120px;
+
+text-align:center;
+
+border-radius:35px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.18);
+
+box-shadow:
+
+0 0 60px rgba(255,170,255,.15),
+
+0 0 120px rgba(132,196,255,.12);
+
+transition:.5s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px) scale(1.02);
+
+}
+
+/* 名字 */
+
+h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:70px;
+
+font-weight:500;
+
+letter-spacing:5px;
+
+color:white;
+
+text-shadow:
+
+0 0 15px rgba(255,180,255,.7),
+
+0 0 40px rgba(150,200,255,.5);
+
+}
+
+/* Portfolio */
+
+p{
+
+margin-top:18px;
+
+font-size:18px;
+
+letter-spacing:8px;
+
+text-transform:uppercase;
+
+color:#d9d8ff;
+
+}
+
+/* 闪光 */
+
+.sparkle{
+
+position:absolute;
+
+width:6px;
+
+height:6px;
+
+background:white;
+
+border-radius:50%;
+
+box-shadow:0 0 10px white;
+
+animation:twinkle 2s infinite alternate;
+
+}
+
+.sparkle:nth-child(1){
+
+left:20%;
+top:18%;
+
+}
+
+.sparkle:nth-child(2){
+
+right:25%;
+top:30%;
+
+animation-delay:1s;
+
+}
+
+.sparkle:nth-child(3){
+
+left:30%;
+bottom:25%;
+
+animation-delay:.5s;
+
+}
+
+.sparkle:nth-child(4){
+
+right:18%;
+bottom:18%;
+
+animation-delay:1.4s;
+
+}
+
+@keyframes twinkle{
+
+from{
+
+opacity:.2;
+transform:scale(.5);
+
+}
+
+to{
+
+opacity:1;
+transform:scale(1.8);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="glow"></div>
+<div class="glow2"></div>
+
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+
+<div class="card">
+
+<h1>Panxi Wang</h1>
+
+<p>Portfolio</p>
+
+</div>
+
+</body>
+
+</html>
