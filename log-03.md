@@ -1,11 +1,12 @@
 # 学习日志 03：打通 AI 生成 -> GitHub 仓库 -> 服务器部署全链路
 
-**时间**：2026-11-01
+**时间**：2026-10-19——11-01
+
 **任务目标**：使用 AI（Codex/GPT）生成网页代码，并通过 GitHub 仓库和 Git 命令，将网页部署到自己的 Ubuntu 服务器上。
 
 ## 💬 我是怎么和 AI 对话的（Prompt）
 > “帮我写一个个人主页的 `index.html`，要求蓝粉配色，复古华丽，正中间写‘ Panxi Wang’
-*(AI 迅速给出了一段排版美观的完整 HTML 代码)*
+
 
 ## 🛠️ 我的硬核操作过程（Git 联动）
 1. **存入仓库**：将 AI 生成的代码在 GitHub 网页端新建为 `index.html` 并提交（Commit）。
@@ -18,4 +19,6 @@
 - **发现**：原来真正的开发不是把代码复制粘贴进服务器，而是把 GitHub 当作中枢。AI 写代码 -> 推送到 GitHub -> 服务器拉取。以后只要改了 GitHub，在服务器跑一下 `git pull`，网页就自动更新了！这就是自动化的魅力！
 
 ## 🖼️ 成果展示
-（在这里贴一张你带小锁的网页截图）
+<img width="1802" height="1104" alt="image" src="https://github.com/user-attachments/assets/09aa4589-92d5-4c8c-8ecd-80204915cca7" />
+
+
