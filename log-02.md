@@ -129,7 +129,7 @@ Certbot 自动完成：
 重新打开网站：
 
 ```
-https://我的域名
+https://pancyspace.com
 ```
 
 浏览器地址栏终于出现了：
